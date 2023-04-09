@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Survey</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    
+    <!-- Form Block -->
+    <div id="main">
+        <form action="">
+
+            <!-- Form Top -->
+            <div id="form-top">
+                <!-- Name -->
+                <div id="form-name">
+                    <label for="">Your Name:</label>
+                    <input type="text" name="name">
+                </div>
+
+                <!-- Location -->
+                <div id="form-location">
+                    <label for="">Dojo Location:</label>
+                    <select name="location" id="">
+                        <option value="san-jose">San Jose</option>
+                        <option value="arlington">Arlington</option>
+                        <option value="mariana">Mariana Trench</option>
+                    </select>
+                </div>
+
+                <!-- Language -->
+                <div id="form-language">
+                    <label for="language">Favorite Language:</label>
+                    <select name="langauge" id="">
+                        <option value="python">Python</option>
+                        <option value="java">Java</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Fomr Bottom -->
+            <div id="form-bottom">
+                <!-- Comment -->
+                <div id="form-comment">
+                    <label for="comment">Comment (optional):</label>
+                    <input type="text" name="comment" class="comment">
+                </div>
+
+                <!-- Submit Button -->
+                <input type="submit" class="submit">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
