@@ -17,15 +17,15 @@
             <!-- Form Top -->
             <div id="form-top">
                 <!-- Name -->
-                <div id="form-name">
-                    <label for="">Your Name:</label>
-                    <input type="text" name="name">
+                <div id="form-name" class="ft">
+                    <label for="name" >Your Name:</label>
+                    <input type="text" name="name" class="fi">
                 </div>
 
                 <!-- Location -->
-                <div id="form-location">
+                <div id="form-location" class="ft">
                     <label for="">Dojo Location:</label>
-                    <select name="location" id="">
+                    <select name="location" class="fi">
                         <option value="san-jose">San Jose</option>
                         <option value="arlington">Arlington</option>
                         <option value="mariana">Mariana Trench</option>
@@ -33,9 +33,9 @@
                 </div>
 
                 <!-- Language -->
-                <div id="form-language">
+                <div id="form-language" class="ft">
                     <label for="language">Favorite Language:</label>
-                    <select name="langauge" id="">
+                    <select name="langauge" class="fi">
                         <option value="python">Python</option>
                         <option value="java">Java</option>
                     </select>
@@ -51,7 +51,9 @@
                 </div>
 
                 <!-- Submit Button -->
-                <input type="submit" class="submit">
+                <div id="form-submit">
+                    <input type="submit" class="submit">
+                </div>
             </div>
 
         </form>

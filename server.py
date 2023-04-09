@@ -4,7 +4,7 @@ app.secret_key = "key secret"
 
 @app.route('/')
 def dojo_survery():
-    return redirect("/dojo_survey.html")
+    return render_template("/dojo_survey.html")
 
 if __name__ == "__main__":
     app.run(debug = True)
