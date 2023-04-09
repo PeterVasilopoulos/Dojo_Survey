@@ -47,19 +47,43 @@
     justify-content: flex-end;
 }
 
-.submit {
-    font-size: 16px;
-    padding: 2px 4px;
-}
-
 
 
 /* Form Data Block */
-h1 {
+h2 {
     text-decoration: underline;
     margin-bottom: 20px;
 }
 
 #info {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    display: flex;
+    gap: 80px;
+}
 
+#info-left p, #info-right p {
+    margin-bottom: 5px;
+}
+
+#info-submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+/* Submit Buttons */
+.submit, #info-submit a {
+    font-size: 20px;
+    padding: 2px 4px;
+    color: white;
+    background-color: rgb(106, 178, 255);
+    box-shadow: 2px 2px black;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.submit:hover, #info-submit a:hover {
+    cursor: pointer;
 }

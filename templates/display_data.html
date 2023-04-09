@@ -12,38 +12,42 @@
     
     <!-- Form Data Block -->
     <div id="main">
-        <h1>Submitted Info</h1>
+        <h2>Submitted Info</h2>
 
         <!-- Info -->
         <div id="info">
-            <!-- Name -->
-            <div id="info-name" class="info-item">
+            <!-- Info Left -->
+            <div id="info-left">
                 <p class="label">Name:</p>
-                
-            </div>
-
-            <!-- Location -->
-            <div id="info-location" class="info-item">
                 <p class="label">Dojo Location:</p>
-
-            </div>
-
-            <!-- Language -->
-            <div id="info-language" class="info-item">
                 <p class="label">Favorite Language:</p>
-
+                <p class="label">Comment:</p>
             </div>
 
-            <!-- Comment -->
-            <div id="info-comment" class="info-item">
-                <p class="label">Comment:</p>
-
+            <!-- Info Right -->
+            <div id="info-right">
+                <p>
+                    {% if session['name'] == "" %}
+                    Empty
+                    {% else %}
+                    {{session['name']}}
+                    {% endif %}
+                </p>
+                <p>{{session['location']}}</p>
+                <p>{{session['language']}}</p>
+                <p>
+                    {% if session['comment'] == "" %}
+                    Empty
+                    {% else %}
+                    {{session['comment']}}
+                    {% endif %}
+                </p>
             </div>
         </div>
 
         <!-- Submit Button -->
         <div id="info-submit">
-            <a href="">Submit</a>
+            <a href="/reset_info">Go Back</a>
         </div>
 
     </div>

@@ -6,7 +6,7 @@ app.secret_key = "key secret"
 def dojo_survery():
     return render_template("/dojo_survey.html")
 
-@app.route('/get_data')
+@app.route('/get_data', methods=['POST'])
 def get_data():
     # Store Form Data
     session['name'] = request.form['name']
@@ -19,7 +19,12 @@ def get_data():
 @app.route('/display_data')
 def display_data():
     # Display Form Data
-    return render_template('/display_data')
+    return render_template('/display_data.html')
+
+@app.route('/reset_info')
+def reset_info():
+    session.clear()
+    return redirect('/')
 
 if __name__ == "__main__":
     app.run(debug = True)
